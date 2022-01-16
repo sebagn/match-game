@@ -1,0 +1,18 @@
+export const iconLibrary = [
+  'reddit',
+  'telegram',
+  'linkedin',
+  'windows',
+  'wordpress',
+  'steam',
+  'youtube',
+  'skype',
+  'reddit',
+  'telegram',
+  'linkedin',
+  'windows',
+  'wordpress',
+  'steam',
+  'youtube',
+  'skype',
+];
