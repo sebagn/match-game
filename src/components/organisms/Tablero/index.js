@@ -1,49 +1,41 @@
-import React, {useEffect, useState} from 'react';
-import {Alert, Button, FlatList, Text, View} from 'react-native';
-import {Carta} from '../../atoms/Carta';
+import React, {useEffect} from 'react';
+import {FlatList, View} from 'react-native';
+import {Card} from '../../molecules/Card';
 import {styles} from './styles';
 import {buildDeck} from '../../../utils/buildDeck';
-import {onCardsCompare} from './onCardsCompare';
 
-export const Tablero = ({deck, setDeck, comparingCards, setComparingCards, guessedCards, setGuessedCards}) => {
-
+export const Tablero = ({
+  deck,
+  setDeck,
+  comparingCards,
+  setComparingCards,
+}) => {
   useEffect(() => {
-    // construye el mazo para el tablero
+    // construye el mazo para el tablero.
     let cards = buildDeck();
     setDeck(cards);
   }, []);
 
   const handleOnPress = id => {
-    // encuentra posicion de la carta elegida en la baraja
+    // encuentra posicion de la carta elegida en la baraja.
     let index = deck.findIndex(card => {
       return card.key == id;
     });
 
-    // selecciona la carta en esa posicion
     let deckChange = [...deck];
+    // si ya esta seleccionada, no debe hacer nada mas.
+    if ((deckChange[index].selected == true)) { 
+      return;
+    }
+    // selecciona la carta en esa posicion.
     deckChange[index].selected = true;
     setDeck(deckChange);
 
-    // agrega la carta a comparar
+    // agrega la carta para comparar.
     let comparing = [...comparingCards];
     comparing.push(deck[index]);
     setComparingCards(comparing);
   };
-
-  // Comparar 2 cartas
-  onCardsCompare(
-    comparingCards,
-    deck,
-    setDeck,
-    setComparingCards,
-    guessedCards,
-    setGuessedCards,
-  );
-
-  // GameOver
-  if (guessedCards.length === 16) {
-    alert('GANASTE');
-  }
 
   return (
     <View>
@@ -53,7 +45,7 @@ export const Tablero = ({deck, setDeck, comparingCards, setComparingCards, guess
         data={deck}
         renderItem={({item}) => {
           return (
-            <Carta
+            <Card
               deck={deck}
               selected={item.selected}
               wasGuessed={item.wasGuessed}

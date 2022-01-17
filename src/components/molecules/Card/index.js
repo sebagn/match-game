@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {TouchableOpacity} from 'react-native';
 import {theme} from '../../../utils/constants/theme';
 import {styles} from './styles';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-export const Carta = ({cardIcon, handleOnPress, selected, wasGuessed}) => {
+export const Card = ({cardIcon, handleOnPress, selected, wasGuessed}) => {
   return (
     <TouchableOpacity style={styles.carta} onPress={handleOnPress}>
       {(selected || wasGuessed) && (

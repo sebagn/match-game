@@ -8,9 +8,9 @@ import {styles} from './styles';
 export const WelcomeScreen = ({handleOnStart}) => {
   return (
     <View style={styles.container}>
-      <Header title="Welcome" />
-      <Title text="Test your memory!" />
-      <CustomButton buttonText={'Start Game'} handleOnPress={handleOnStart}/>
+      <Header title="Match-Game" />
+      <Title text="Prueba tu memoria!" />
+      <CustomButton buttonText={'Jugar'} handleOnPress={handleOnStart}/>
     </View>
   );
 };

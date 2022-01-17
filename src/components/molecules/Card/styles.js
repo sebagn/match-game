@@ -8,5 +8,6 @@ export const styles = StyleSheet.create ({
         backgroundColor: theme.secColor,
         margin: 5,
         padding: 10,
+        elevation: 10,
     }
 })
