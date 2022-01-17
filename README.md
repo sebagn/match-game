@@ -2,6 +2,6 @@
 
 Creado con react-native, se utilizó react-native-vector-icons y lodash.
 
-![Screenshot_1](https://user-images.githubusercontent.com/87787750/149809835-b9e566bf-cb03-4f72-ba4b-88ab6f146052.png)
-![Screenshot_2](https://user-images.githubusercontent.com/87787750/149809846-5e67b2bb-487f-4b06-ae8c-0902a0132d94.png)
-![Screenshot_3](https://user-images.githubusercontent.com/87787750/149809848-4874ce30-0f8a-4534-9ace-5597d6ee79e3.png)
+![Screenshot_2](https://user-images.githubusercontent.com/87787750/149811771-50d6eb80-27e9-498f-a46c-81f5acbdfe03.png)
+![Screenshot_1](https://user-images.githubusercontent.com/87787750/149811570-d2d979d9-c055-4b59-8b72-49d45049cdc8.png)
+![Screenshot_3](https://user-images.githubusercontent.com/87787750/149811748-5bd2631a-751a-46e9-9341-38d8884de2c9.png)
