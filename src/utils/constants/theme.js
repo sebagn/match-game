@@ -3,7 +3,7 @@ export const theme = {
     lightColor: '#FF8E72',
     veryLightColor:'#FFE4D6',
     secColor: '#4CE0B3',
-    darkSecColor: '#377771',
+    darkSecColor: '#27544F',
     white: '#fafafa',
     black: '#000',
     darkGray: '#212121',

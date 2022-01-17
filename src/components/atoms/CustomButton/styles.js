@@ -2,16 +2,17 @@ import {StyleSheet} from 'react-native';
 import {theme} from '../../../utils/constants/theme';
 
 export const styles = StyleSheet.create({
-  container: {
+  button: {
     backgroundColor: theme.darkSecColor,
-    flexGrow: 1,
-    padding: 16,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
-  title: {
-    fontSize: 36,
+  buttonText: {
+    borderRadius: 20,
+    color: theme.black,
+    textAlign: 'center',
+    fontSize: 20,
     fontWeight: 'bold',
-    color: theme.lightColor,
+    backgroundColor: theme.lightColor,
+    margin: 20,
+    padding: 20,
   },
 });

@@ -11,6 +11,6 @@ export const styles = StyleSheet.create({
     aspectRatio: 1,
     
     alignItems: 'center',
-    borderWidth: 3, 
+    backgroundColor: theme.darkSecColor,
   },
 });

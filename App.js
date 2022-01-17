@@ -6,25 +6,32 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, {useState} from 'react';
 import {StyleSheet, SafeAreaView, View, Text} from 'react-native';
-import {Header} from './src/components/molecules/Header/index.js';
-import {Tablero} from './src/components/organisms/Tablero/index.js';
-
+import {GameScreen} from './src/screens/GameScreen';
+import {WelcomeScreen} from './src/screens/WelcomeScreen';
 
 const App = () => {
-  return (
-    <SafeAreaView style={styles.sectionContainer}>
-      <View>
-        <Header title={'Encuentra las parejas'}></Header>
-        <Tablero />
-      </View>
-    </SafeAreaView>
+  const [gameStarted, setGameStarted] = useState(false);
+  const [gameWon, setGameWon] = useState(false);
+
+  const handleOnStart = () => {
+    setGameStarted(true);
+  };
+  const handleGoBack = () => {
+    setGameStarted(false);
+  };
+
+  let content = gameStarted ? (
+    <GameScreen handleGoBack={handleGoBack}/>
+  ) : (
+    <WelcomeScreen handleOnStart={handleOnStart} />
   );
+  return <SafeAreaView style={styles.Container}>{content}</SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
-  sectionContainer: {
+  Container: {
     flex: 1,
   },
   sectionTitle: {
