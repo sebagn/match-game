@@ -1,10 +1,10 @@
 export const theme = {
-    priColor: '#ffff51',
-    lightColor: '#ffff51',
-    veryLightColor:'#ff81ff',
+    priColor: '#0077b6',
+    lightColor: '#0077b6',
+    veryLightColor:'#0077b6',
     
-    secColor: '#ffff51',
-    darkSecColor: '#7052ff',
+    secColor: '#0077b6',
+    darkSecColor: '#caf0f8',
 
     white: '#fafafa',
     black: '#000',

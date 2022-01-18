@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
   title: {
     textAlign: 'center',
     fontSize: 36,
-    fontWeight: 'bold',
     color: theme.lightColor,
+    fontFamily: 'Dongle',
   },
 });

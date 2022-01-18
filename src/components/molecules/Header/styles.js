@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
   },
   title: {
     fontSize: 36,
-    fontWeight: 'bold',
     color: theme.darkSecColor,
+    fontFamily: 'Dongle-Bold',
   },
 });

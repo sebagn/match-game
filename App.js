@@ -43,19 +43,9 @@ const App = () => {
 const styles = StyleSheet.create({
   Container: {
     flex: 1,
+    fontFamily: 'Dongle',
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
+
 });
 
 export default App;

@@ -7,12 +7,13 @@ export const styles = StyleSheet.create({
   },
   buttonText: {
     borderRadius: 20,
-    color: theme.black,
+    color: theme.darkSecColor,
     textAlign: 'center',
     fontSize: 20,
     fontWeight: 'bold',
     backgroundColor: theme.lightColor,
     margin: 20,
     padding: 20,
+    fontFamily: 'Dongle-Light',
   },
 });
