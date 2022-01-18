@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   title: {
-    fontSize: 36,
+    fontSize: 48,
     color: theme.darkSecColor,
     fontFamily: 'Dongle-Bold',
   },

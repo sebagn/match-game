@@ -3,7 +3,7 @@ import {theme} from '../../../utils/constants/theme';
 
 export const styles = StyleSheet.create({
   container: {
-    backgroundColor: theme.darkSecColor,
+    // backgroundColor: theme.darkSecColor,
     flexGrow: 1,
     padding: 16,
     justifyContent: 'center',
@@ -11,8 +11,8 @@ export const styles = StyleSheet.create({
   },
   title: {
     textAlign: 'center',
-    fontSize: 36,
+    fontSize: 60,
     color: theme.lightColor,
-    fontFamily: 'Dongle',
+    fontFamily: 'Dongle-Bold',
   },
 });

@@ -7,10 +7,11 @@
  */
 
 import React, {useState} from 'react';
-import {StyleSheet, SafeAreaView, View, Text} from 'react-native';
+import {StyleSheet, SafeAreaView, ImageBackground} from 'react-native';
 import {GameScreen} from './src/screens/GameScreen';
 import {WelcomeScreen} from './src/screens/WelcomeScreen';
 import {WinScreen} from './src/screens/WinScreen';
+const image = require('./assets/bg1.jpg');
 
 const App = () => {
   const [gameStarted, setGameStarted] = useState(false);
@@ -29,13 +30,18 @@ const App = () => {
       <WelcomeScreen handleOnStart={handleOnStart} />
     ) : gameStarted && !gameWon ? (
       <GameScreen handleGoBack={handleGoBack} setGameWon={setGameWon} />
-    ) : gameStarted && gameWon && (
-      <WinScreen handleGoBack={handleGoBack} />
+    ) : (
+      gameStarted && gameWon && <WinScreen handleGoBack={handleGoBack} />
     );
 
   return (
     <SafeAreaView style={styles.Container}>
-      {content}
+      <ImageBackground
+        source={image}
+        resizeMode="cover"
+        style={styles.ImageBackground}>
+        {content}
+      </ImageBackground>
     </SafeAreaView>
   );
 };
@@ -43,9 +49,10 @@ const App = () => {
 const styles = StyleSheet.create({
   Container: {
     flex: 1,
-    fontFamily: 'Dongle',
   },
-
+  ImageBackground: {
+    flex: 1,
+  },
 });
 
 export default App;

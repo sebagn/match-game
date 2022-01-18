@@ -23,12 +23,12 @@ export const onCardsCompare = (
     setGuessedCards(guessedPair);
   }
 
-  // limpia el tablero
-  setTimeout(() => {
-    deckChange[index1].selected = false;
-    deckChange[index2].selected = false;
-    setDeck(deckChange);
-  }, 500);
+    // limpia el tablero
+    setTimeout(() => {
+      deckChange[index1].selected = false;
+      deckChange[index2].selected = false;
+      setDeck(deckChange);
+    }, 500);
 
-  setComparingCards([]);
+    setComparingCards([]);
 };
