@@ -11,6 +11,6 @@ export const styles = StyleSheet.create({
   title: {
     fontSize: 48,
     color: theme.darkSecColor,
-    fontFamily: 'Dongle-Bold',
+    fontFamily: theme.fontBold,
   },
 });

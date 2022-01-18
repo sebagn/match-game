@@ -13,6 +13,6 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 60,
     color: theme.lightColor,
-    fontFamily: 'Dongle-Bold',
+    fontFamily: theme.fontBold,
   },
 });

@@ -73,6 +73,9 @@
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
 		<string>OpenSans-Regular.ttf</string>
+		<string>Dongle_Bold.ttf</string>
+		<string>Dongle_Light.ttf</string>
+		<string>Dongle_Regular.ttf</string>
 	</array>
 </dict>
 </plist>

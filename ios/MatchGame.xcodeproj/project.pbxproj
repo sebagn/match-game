@@ -32,6 +32,9 @@
 		236B8B5D2D29410997360ACE /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C645E1A8ABBB405CB54210FC /* SimpleLineIcons.ttf */; };
 		73DBFBF7D34D429FB02A1C1C /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF15FA5E00524151AAEE816B /* Zocial.ttf */; };
 		BF56359C97D7480AB6811945 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F049DAFA7394E57A6E52ABF /* OpenSans-Regular.ttf */; };
+		76B59D8C66404AA1A9AB43F0 /* Dongle_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 783EA8E59CD749A4AFCA95DA /* Dongle_Bold.ttf */; };
+		C25B7C25759147E59706F948 /* Dongle_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FD3983DD16B4C4E95DE10C9 /* Dongle_Light.ttf */; };
+		3F573625532349B8BE152610 /* Dongle_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD4959894C57477483CCA71E /* Dongle_Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,9 @@
 		C645E1A8ABBB405CB54210FC /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		BF15FA5E00524151AAEE816B /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		0F049DAFA7394E57A6E52ABF /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; name = "OpenSans-Regular.ttf"; path = "../assets/fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		783EA8E59CD749A4AFCA95DA /* Dongle_Bold.ttf */ = {isa = PBXFileReference; name = "Dongle_Bold.ttf"; path = "../assets/fonts/Dongle_Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6FD3983DD16B4C4E95DE10C9 /* Dongle_Light.ttf */ = {isa = PBXFileReference; name = "Dongle_Light.ttf"; path = "../assets/fonts/Dongle_Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DD4959894C57477483CCA71E /* Dongle_Regular.ttf */ = {isa = PBXFileReference; name = "Dongle_Regular.ttf"; path = "../assets/fonts/Dongle_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +194,9 @@
 				C645E1A8ABBB405CB54210FC /* SimpleLineIcons.ttf */,
 				BF15FA5E00524151AAEE816B /* Zocial.ttf */,
 				0F049DAFA7394E57A6E52ABF /* OpenSans-Regular.ttf */,
+				783EA8E59CD749A4AFCA95DA /* Dongle_Bold.ttf */,
+				6FD3983DD16B4C4E95DE10C9 /* Dongle_Light.ttf */,
+				DD4959894C57477483CCA71E /* Dongle_Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -303,6 +312,9 @@
 				236B8B5D2D29410997360ACE /* SimpleLineIcons.ttf in Resources */,
 				73DBFBF7D34D429FB02A1C1C /* Zocial.ttf in Resources */,
 				BF56359C97D7480AB6811945 /* OpenSans-Regular.ttf in Resources */,
+				76B59D8C66404AA1A9AB43F0 /* Dongle_Bold.ttf in Resources */,
+				C25B7C25759147E59706F948 /* Dongle_Light.ttf in Resources */,
+				3F573625532349B8BE152610 /* Dongle_Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,6 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.lightColor,
     margin: 20,
     padding: 5,
-    fontFamily: 'Dongle-Regular',
+    fontFamily: theme.font,
   },
 });

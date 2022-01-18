@@ -9,4 +9,8 @@ export const theme = {
     white: '#fafafa',
     black: '#000',
     darkGray: '#212121',
+
+    font: 'Dongle_Regular',
+    fontLight: 'Dongle_Light',
+    fontBold: 'Dongle_Bold',
 }
