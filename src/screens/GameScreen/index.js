@@ -4,7 +4,8 @@ import {CustomButton} from '../../components/atoms/CustomButton';
 import {Header} from '../../components/molecules/Header';
 import {Tablero} from '../../components/organisms/Tablero';
 import {styles} from './styles';
-import {onCardsCompare} from './onCardsCompare';
+import {buildDeck} from '../../utils/buildDeck';
+import {onCardsCompare} from '../../utils/onCardsCompare';
 
 export const GameScreen = ({handleGoBack, setGameWon}) => {
   const [deck, setDeck] = useState([]);

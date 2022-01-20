@@ -2,9 +2,15 @@ import React, {useEffect} from 'react';
 import {FlatList, View} from 'react-native';
 import {Card} from '../../molecules/Card';
 import {styles} from './styles';
-import {buildDeck} from './buildDeck';
+import {buildDeck} from '../../../utils/buildDeck';
 
-export const Tablero = ({deck, setDeck, comparingCards, setComparingCards}) => {
+export const Tablero = ({
+  deck,
+  setDeck,
+  comparingCards,
+  setComparingCards,
+}) => {
+
   useEffect(() => {
     // construye el mazo para el tablero.
     let cards = buildDeck();
@@ -20,7 +26,7 @@ export const Tablero = ({deck, setDeck, comparingCards, setComparingCards}) => {
     let deckChange = [...deck];
     // si ya esta seleccionada, no debe hacer nada mas.
     if (
-      // deckChange[index].selected == true ||
+      deckChange[index].selected == true ||
       deckChange[index].wasGuessed == true
     ) {
       return;
@@ -34,7 +40,6 @@ export const Tablero = ({deck, setDeck, comparingCards, setComparingCards}) => {
     let comparing = [...comparingCards];
     comparing.push(deck[index]);
     setComparingCards(comparing);
-    console.log(comparingCards)
   };
 
   return (

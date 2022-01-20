@@ -9,5 +9,6 @@ export const styles = StyleSheet.create ({
         margin: 5,
         padding: 10,
         elevation: 10,
+        borderRadius: 5,
     }
 })

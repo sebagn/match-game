@@ -1,10 +1,10 @@
 import shuffle from 'lodash.shuffle';
-import {iconLibrary} from '../../../utils/constants/iconLibrary';
+import {iconLibrary} from './constants/iconLibrary';
 
 export const buildDeck = () => {
   let deck = iconLibrary.map(icon => ({
     icon: icon,
-    selected: true,
+    selected: false,
     wasGuessed: false,
     key: Math.random().toString()
   }));
